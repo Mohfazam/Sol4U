@@ -2,7 +2,7 @@ import React from 'react'
 
 const Feature = () => {
   return (
-    <div className='bg-black text-white w-full h-[720px] flex justify-center items-center rounded-bl-2xl rounded-br-2xl'>
+    <div className='bg-black text-white w-full h-[720px] flex justify-center items-center rounded-bl-3xl rounded-br-3xl'>
       <div className='flex'>
         <div>
           <img src="/Phone.png" alt="Phone PNG" className='h-[540px] rounded-4xl border-4 border-[#6a6f6e] ml-28 mr-12'/>
