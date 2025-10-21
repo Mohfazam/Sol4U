@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <div className="w-full h-16 text-black mt-2">
+    <div className="w-full h-16 text-black mt-2 mb-2">
       <div className="h-full flex items-center px-24 relative">
         
         <a href="/" className="text-[39px] leading-[46px] font-normal lg:absolute left-1/2 -translate-x-1/2 pt-2 pb-2">
