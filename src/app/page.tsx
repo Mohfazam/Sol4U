@@ -1,6 +1,7 @@
 import FAQ from '@/Components/FAQ'
 import Feature from '@/Components/Feature'
 import Fields from '@/Components/Fields'
+import Footer from '@/Components/Footer'
 import Hero from '@/Components/Hero'
 import { Navbar } from '@/Components/Navbar'
 import React from 'react'
@@ -13,6 +14,7 @@ const page = () => {
     <Feature />
     <Fields />
     <FAQ />
+    <Footer />
    </div>
   )
 }
