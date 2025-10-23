@@ -9,9 +9,9 @@ const Feature = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center gap-6 text-[36px] font-normal text-center leading-[50px]'>
-          <span className='w-[550px]'>For the generation that invests with intention and intuition.</span>
+          <span className='w-[550px]'>For brands that believe in ideas worth building.</span>
 
-          <span className='w-[550px]'>We read Reddit, earnings calls, and headlines so you don't have to.  <span className='bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold'>No noise.</span>      <span className='bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent font-semibold'>No jargon.</span>  Just clear actionable insights.</span>
+          <span className='w-[510px]'>We turn concepts into seamless digital experiences.  <span className='bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold'>No noise.</span>      <span className='bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent font-semibold'>No confusion.</span>  Just clarity and execution.</span>
         </div>
 
       </div>
