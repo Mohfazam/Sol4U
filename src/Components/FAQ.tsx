@@ -3,10 +3,28 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react"
 
 const FAQS = [
-  { title: "What is Fortuna", desc: "Fortuna is your AI-powered investing copilot—giving you market insights, social sentiment, and personalized portfolio strategies in plain language." },
-  { title: "Is Fortuna live yet?", desc: "We're launching soon. You can join the waitlist for early access." },
-  { title: "What can I ask Fortuna?", desc: "Anything from Is Nvidia a good buy right now Build a portfolio with a focus on Tech and Pharma for me? Just type it—Fortuna gets it." },
+  { 
+    title: "What is SOL4U?", 
+    desc: "SOL4U is a creative tech agency that builds custom software and digital solutions, blending design, development, and strategy to bring ideas to life." 
+  },
+  { 
+    title: "Who do you work with?", 
+    desc: "We collaborate with startups, SMEs, and enterprises looking for innovative digital solutions that scale and create impact." 
+  },
+  { 
+    title: "What services do you offer?", 
+    desc: "We provide end-to-end solutions including web and app development, UI/UX design, product strategy, and technology consulting tailored to your needs." 
+  },
+  { 
+    title: "How can I start a project with you?", 
+    desc: "Simply reach out via chat or email with your idea, and we’ll guide you through the process from concept to launch." 
+  },
+  { 
+    title: "Are you open to ongoing collaborations?", 
+    desc: "Absolutely! We work with clients on long-term partnerships to continuously improve, scale, and evolve their digital products." 
+  },
 ]
+
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -16,7 +34,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="h-[700px] bg-black flex flex-col justify-center items-center overflow-hidden">
+    <div className="h-fit pt-32 pb-32 bg-black flex flex-col justify-center items-center overflow-hidden">
       <div className="text-[#8075ff] text-[44px] font-normal leading-[50px]" draggable={false}>
         FAQ
       </div>
