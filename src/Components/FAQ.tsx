@@ -4,8 +4,8 @@ import { ChevronDown } from "lucide-react"
 
 const FAQS = [
   { 
-    title: "What is SOL4U?", 
-    desc: "SOL4U is a creative tech agency that builds custom software and digital solutions, blending design, development, and strategy to bring ideas to life." 
+    title: "What is SOLS4U?", 
+    desc: "SOLS4U is a creative tech agency that builds custom software and digital solutions, blending design, development, and strategy to bring ideas to life." 
   },
   { 
     title: "Who do you work with?", 

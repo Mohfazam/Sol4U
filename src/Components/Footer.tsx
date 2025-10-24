@@ -3,13 +3,13 @@ import { useState } from 'react';
 import { Mail, Phone, X } from "lucide-react"
 
 import { ContactModal } from './ContactModal';
-import { useRouter } from 'next/navigation'; // Changed from 'next/router' for Next.js 13+ app directory
+import { useRouter } from 'next/navigation'; 
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const router = useRouter(); // Changed from 'navigate' to 'router'
+  const router = useRouter(); 
 
-  // Function to handle external navigation
+  
   const handleExternalLink = (url:string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -69,7 +69,7 @@ const Footer = () => {
 
 
         <div className="pt-22">
-          Ⓒ 2025 Fortuna. All rights reserved.
+          Ⓒ 2025 Sols4U. All rights reserved.
         </div>
       </div>
 
