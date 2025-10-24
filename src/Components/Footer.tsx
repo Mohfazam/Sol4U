@@ -3,9 +3,16 @@ import { useState } from 'react';
 import { Mail, Phone, X } from "lucide-react"
 
 import { ContactModal } from './ContactModal';
+import { useRouter } from 'next/navigation'; // Changed from 'next/router' for Next.js 13+ app directory
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const router = useRouter(); // Changed from 'navigate' to 'router'
+
+  // Function to handle external navigation
+  const handleExternalLink = (url:string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="bg-[#f9f0fb] h-full w-full p-16">
@@ -31,13 +38,31 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-2">
-            <Mail /><span>-----------------</span>
+            <Mail /><span>Broai.services@gmail.com</span>
           </div>
 
           <div className="flex gap-2 w-8 h-8">
-            <img src="/x.svg" alt="coming soon" title="coming soon" />
-            <img src="/instagram.png" alt="coming soon" title="coming soon"/>
-            <img src="/linkedin.svg" alt="coming soon" title="coming soon"/>
+            <img 
+              src="/x.svg" 
+              alt="X (Twitter)" 
+              title="Follow us on X" 
+              onClick={() => handleExternalLink("https://x.com/BroAiServices")}
+              className="cursor-pointer hover:opacity-70 transition-opacity"
+            />
+            <img 
+              src="/instagram.png" 
+              alt="Instagram" 
+              title="Follow us on Instagram" 
+              onClick={() => handleExternalLink("https://www.instagram.com/broai.services/")}
+              className="cursor-pointer hover:opacity-70 transition-opacity"
+            />
+            <img 
+              src="/linkedin.svg" 
+              alt="LinkedIn" 
+              title="Connect on LinkedIn" 
+              onClick={() => handleExternalLink("https://www.linkedin.com/in/bro-ai-714375384/")}
+              className="cursor-pointer hover:opacity-70 transition-opacity"
+            />
             
           </div>
         </div>

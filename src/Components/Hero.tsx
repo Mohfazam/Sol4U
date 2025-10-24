@@ -30,7 +30,7 @@ const Hero = () => {
                         </span>
                         <button 
                             onClick={() => setIsModalOpen(true)}
-                            className="w-[240px] bg-[#8075ff] p-6 rounded-full text-white font-inter text-[18px] leading-normal cursor-pointer transition-all hover:bg-[#554df7] tracking-[4px]"
+                            className="w-[300px] bg-[#8075ff] p-6 rounded-full text-white font-inter text-[16px] leading-normal cursor-pointer transition-all hover:bg-[#554df7] tracking-[3px]"
                         >
                             REQUEST A CALL BACK
                         </button>
