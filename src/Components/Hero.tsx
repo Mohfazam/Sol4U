@@ -1,4 +1,10 @@
+"use client"
+
+import { useState } from "react";
+import { ContactModal } from "./ContactModal";
 const Hero = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <div className='mt-12 mr-0 text-black'>
             <div className='text-black text-[108px] leading-[112px] w-full flex justify-center items-center overflow-hidden'>
@@ -22,12 +28,13 @@ const Hero = () => {
                                 &nbsp;that turns ideas into powerful digital experiences.
                             </span>
                         </span>
-                        <button className="w-[240px] bg-[#8075ff] p-6 rounded-full text-white font-inter text-[18px] leading-normal cursor-pointer transition-all hover:bg-[#554df7] tracking-[4px]">
-                            JOIN WAITLIST
+                        <button 
+                            onClick={() => setIsModalOpen(true)}
+                            className="w-[240px] bg-[#8075ff] p-6 rounded-full text-white font-inter text-[18px] leading-normal cursor-pointer transition-all hover:bg-[#554df7] tracking-[4px]"
+                        >
+                            REQUEST A CALL BACK
                         </button>
-
                     </div>
-
                 </div>
 
                 <div className='opacity-0' style={{
@@ -36,7 +43,12 @@ const Hero = () => {
                     <img src="/Hero.svg" alt="Hero.svg" draggable={false} className='w-172' />
                 </div>
             </div>
+
             <div className="w-full shapedividers_com-5001 h-32 p-0 w-full" />
+
+            
+            <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
             <style>{`
                 @keyframes fadeInUp {
                     from {
@@ -112,7 +124,7 @@ const Hero = () => {
                 }
             `}</style>
         </div>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

@@ -1,7 +1,12 @@
+"use client"
+import { useState } from 'react';
 import { Mail, Phone, X } from "lucide-react"
 
+import { ContactModal } from './ContactModal';
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="bg-[#f9f0fb] h-full w-full p-16">
       <div className="flex flex-col justify-center items-center gap-2">
@@ -10,7 +15,9 @@ const Footer = () => {
 
         <div className="w-144 h-20 flex justify-center items-center mt-12 gap-14">
           <input type="text" className="h-full w-full border-2 border-[#e0e0e0] text-[#c2c2c2] text-[22px] leading-[26px] tracking-[2px] font-inter text-center rounded" placeholder="Phone Number" />
-          <button className="h-full bg-[#8075ff] rounded-3xl px-8 flex items-center justify-center text-[14px] leading-[19px] font-inter tracking-[2px] cursor-pointer transition-all hover:bg-[#554df7]">
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="h-full bg-[#8075ff] rounded-3xl px-8 flex items-center justify-center text-[14px] leading-[19px] font-inter tracking-[2px] cursor-pointer transition-all hover:bg-[#554df7]">
             Request Call Back
           </button>
 
@@ -40,6 +47,9 @@ const Footer = () => {
           Ⓒ 2025 Fortuna. All rights reserved.
         </div>
       </div>
+
+      
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   )
 }
