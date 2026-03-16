@@ -9,6 +9,7 @@ import React from 'react'
 const page = () => {
   return (
    <div>
+    <script src="http://localhost:5173/dist/widget.iife.js" data-site-id="d696375c-929a-49dc-9c7f-ee334a24a7b4"></script>
     <Navbar/>
     <Hero />
     <Feature />
