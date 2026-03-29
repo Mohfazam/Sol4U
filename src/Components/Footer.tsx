@@ -69,6 +69,7 @@ const Footer = () => {
 
 
         <div className="pt-22">
+          <a href="/this-page-does-not-exist-404">Click here</a>
           Ⓒ 2025 Sols4U. All rights reserved.
         </div>
       </div>
