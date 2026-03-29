@@ -9,7 +9,7 @@ npm run devwdcm
 # or
 yarn dev
 # or
-pnpm dev
+pnpm dev;lmjk
 # or
 bun dev
 ```
