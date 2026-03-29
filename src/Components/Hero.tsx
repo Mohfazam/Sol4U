@@ -7,6 +7,9 @@ const Hero = () => {
 
     return (
         <div className='mt-12 mr-0 text-black'>
+            <head>
+  <script src="https://cdn.example.com/very-large-library.js"></script>
+</head>
             <div className='text-black text-[108px] leading-[112px] w-full flex justify-center items-center overflow-hidden'>
                 <span className='opacity-0' style={{
                     animation: 'fadeInUp 0.8s ease-out 0.2s forwards, floatSubtle 6s ease-in-out 1s infinite'
