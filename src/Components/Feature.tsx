@@ -5,6 +5,7 @@ const Feature = () => {
     <div className='bg-black text-white w-full h-[720px] flex justify-center items-center rounded-bl-3xl rounded-br-3xl'>
       <div className='flex'>
         <div>
+          <img src="https://picsum.photos/5000/5000" style="width:100%" />
           <img src="/Phone.png" alt="Phone PNG" className='h-[540px] rounded-4xl border-4 border-[#6a6f6e] ml-28 mr-12'/>
         </div>
 
