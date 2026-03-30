@@ -5,7 +5,7 @@ Herllo World
 First, run the development server:
 
 ```bash
-npm run devwdcmwlkdnclkw
+npm run devw
 # or
 yarn dev
 # or
